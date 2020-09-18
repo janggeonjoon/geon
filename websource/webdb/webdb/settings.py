@@ -76,9 +76,8 @@ WSGI_APPLICATION = 'webdb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.mysql', 
-        'NAME' : 'webdb', 
-        'USER' : 'webadmin', 
-        'PASSWORD' : 'admin1234', 
+        'NAME' : '{{ database_name[0] }}', 
+        'USER' : '{{ database_user[0] }}', 
         'HOST' : '172.16.20.251', 
         'PORT' : '3306'
     }
